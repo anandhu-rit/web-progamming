@@ -1,0 +1,48 @@
+<DOCTYPE "html">
+
+<html>
+
+<head> 
+    <title></title>
+
+    <style>
+        body{
+        
+        text-align:center;
+        margin-top:100px;
+        font-family:san-serif;
+	   
+	}
+	
+	button{
+	padding:10 20px;
+	margin:10px;
+	font-size:18px;
+	cursor:poiner;
+	
+	
+    </style>
+</head>
+
+<body>
+
+<button id="colorButton"> change bg</button>
+
+
+
+
+ <script>
+        const Button = document.getElementById("colorButton");
+        Button.addEventListener("click", function () {
+            document.body.style.backgroundColor = "red";
+        });
+        Button.addEventListener("dblclick", function () {
+            document.body.style.backgroundColor = "green";
+        });
+    </script>
+    
+
+
+</body>
+
+</html>

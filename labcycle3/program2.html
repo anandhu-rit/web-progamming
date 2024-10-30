@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Light Bulb On/Off</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 600px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Light Bulb On/Off Control</h2>
+    <img id="bulb" src="off.png" alt="Light Bulb">
+    <br><br>
+    <button onclick="turnOn()">Turn On</button>
+    <button onclick="turnOff()">Turn Off</button>
+
+    <script>
+        const bulbImage = document.getElementById("bulb");
+        function turnOn() {
+            bulbImage.src = "on.png";
+        }
+        function turnOff() {
+            bulbImage.src = "off.png";
+        }
+    </script>
+</body>
+
+</html>
